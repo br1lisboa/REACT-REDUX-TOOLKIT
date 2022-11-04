@@ -1,6 +1,6 @@
 
 import { useDispatch, useSelector } from 'react-redux'
-import { decrement, increment, incrementBy } from './slices/counter/counterSlice'
+import { decrement, increment, incrementBy } from './store/slices/counter/counterSlice'
 
 import reactLogo from './assets/react.svg'
 import './App.css'
