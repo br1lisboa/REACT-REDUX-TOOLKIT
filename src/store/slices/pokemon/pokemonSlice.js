@@ -1,19 +1,21 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-export const templateSlice = createSlice({
-
-    name: 'value',
-
+export const pokemonSlace = createSlice({
+    name: 'pokemon',
     initialState: {
-        value: 1
+        page: 0,
+        pokemons: [],
+        isLoading: false
     },
-
     reducers: {
-        increment: (state) => {
-            state.value += 1
+        startLoadingPokemons: (state, /* action */) => {
+            state.isLoading = true
         },
+        setPokemons: (state, action) => {
+            console.log(action)
+        }
     },
 })
 
 // Action creators are generated for each case reducer function
-export const { increment } = templateSlice.actions
+export const { startLoadingPokemons, setPokemons } = pokemonSlace.actions
