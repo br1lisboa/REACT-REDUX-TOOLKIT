@@ -15,7 +15,9 @@ export const pokemonSlace = createSlice({
             console.log(action)
         }
     },
-})
+});
+
+// Thunk funcion que ejectuara tarea asincrona que ejecutara una accion de nuestro reducer
 
 // Action creators are generated for each case reducer function
 export const { startLoadingPokemons, setPokemons } = pokemonSlace.actions
